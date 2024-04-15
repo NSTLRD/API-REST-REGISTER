@@ -6,7 +6,7 @@ tambien nos permite hacer login y obtener un token al poder inicial sesion corre
 - Para poder ejecutar la aplicacion necesita tener JDK 17 y Maven instalado en su maquina.
 - tambien en caso de persitir la base de datos necesita tener instalado MySQL en su maquina o h2 que es una base de datos in memory.
 - puede clonar el repositorio y ejecutar el comando `mvn spring-boot:run` para ejecutar la aplicacion.
-- la aplicacion se ejecutara en el puerto 8003 y la url base es `http://localhost:8003/api/v1/`
+- la aplicacion se ejecutara en el puerto 8003 y la url base es `http://localhost:8080/api/v1/`
 - para poder ver la documentacion de la API puede acceder a la url `http://localhost:8080/api/v1/swagger-ui.html`
 - para poder ver la base de datos h2 puede acceder a la url `http://localhost:8080/api/v1/h2-console` y usar las siguientes credenciales:
   - JDBC URL: jdbc:h2:mem:testdb
@@ -14,7 +14,7 @@ tambien nos permite hacer login y obtener un token al poder inicial sesion corre
   - Password: admin
 
 # Payload de la API
-- para poder registrar un usuario necesita enviar una peticion POST a la url `http://localhost:8003/api/v1/users/register` con el siguiente body:
+- para poder registrar un usuario necesita enviar una peticion POST a la url `http://localhost:8080/api/v1/users/register` con el siguiente body:
 - Request:  
 - ```json
   {
@@ -41,7 +41,7 @@ tambien nos permite hacer login y obtener un token al poder inicial sesion corre
     "active": true
   }
   ```
-- para poder hacer login necesita enviar una peticion POST a la url `http://localhost:8003/api/v1/users/login` con el siguiente body:
+- para poder hacer login necesita enviar una peticion POST a la url `http://localhost:8080/api/v1/users/login` con el siguiente body:
 - Request:  
 - ```json
   {
